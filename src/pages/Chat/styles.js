@@ -22,16 +22,16 @@ export const MessageInput = styled.div`
 `;
 
 export const Container = styled.div`
-  height: 100%;
-  background: #fff;
-  max-width: 980px;
-  margin: 0px auto;
-  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Content = styled.div`
-  height: calc(100% - 170px);
-  display: flex;
+  background: #fff;
+  max-width: 980px;
+  margin: 0px auto 60px auto;
+  padding: 0px 20px;
+  overflow-y: auto;
 `;
 
 export const Card = styled.div`
@@ -39,12 +39,16 @@ export const Card = styled.div`
 `;
 
 export const FooterMessage = styled.div`
+  display: flex;
+  width: 100%;
   height: 60px;
   background: #eee;
+  position: fixed;
+  bottom: 0;
 
   form {
     display: flex;
-
+    flex: 1;
     input {
       margin: 10px;
       height: 40px;
