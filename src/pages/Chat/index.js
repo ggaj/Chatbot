@@ -21,7 +21,7 @@ import CardInfo from '~/components/CardInfo';
 export default function Main() {
   return (
     <Container>
-      {/* <MessageTitle
+      <MessageTitle
         messages={[
           'Aguarde um momento enquanto eu consulto...',
           'Tudo certo, vi aqui que você já pode solicitar suas férias e tem direito a 30 dias, vamos lá',
@@ -33,9 +33,9 @@ export default function Main() {
         replies={['Não', 'Sim']}
       />
       <MenuReplay
-        infos={['Valor Bruto: R$ 10.000,00', 'Valor Bruto: R$ 10.000,00']}
+        infos={['Valor Bruto: R$ 5.000,00', 'Valor Bruto: R$ 5.000,00']}
         replies={['Não', 'Sim']}
-      /> */}
+      />
 
       <CardInfo
         images={[
@@ -50,7 +50,10 @@ export default function Main() {
             title: 'Grêmio o melhor',
           },
         ]}
-        messages={['Nome: Gildo Gomes de Araujo', 'Saldo: R$ 1000,00']}
+        messages={[
+          'Nome: Gildo Gomes de Araujo asda as as asas asasas assasas as as as asasasas asasasa ',
+          'Saldo: R$ 1000,00',
+        ]}
       />
 
       {/* <Content>
@@ -144,7 +147,7 @@ export default function Main() {
           </Menu>
         </Card> */}
       {/* </Content> */}
-      <FooterMessage>
+      {/* <FooterMessage>
         <Form>
           <Input name="message" placeholder="Aa" />
 
@@ -152,7 +155,7 @@ export default function Main() {
             <MdSend size="20" color="#333" />
           </Send>
         </Form>
-      </FooterMessage>
+      </FooterMessage> */}
     </Container>
   );
 }

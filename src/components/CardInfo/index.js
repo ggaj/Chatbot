@@ -13,9 +13,11 @@ export default function CardInfo({ images = [], messages = [] }) {
         </div>
       </Image>
       <Info>
-        {messages.map(message => (
-          <div>{message}</div>
-        ))}
+        <div>
+          {messages.map(message => (
+            <span>{message}</span>
+          ))}
+        </div>
       </Info>
     </Container>
   );

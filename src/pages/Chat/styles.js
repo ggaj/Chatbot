@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const MessageInput = styled.div`
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+  }
   display: flex;
   flex-direction: row-reverse;
 
@@ -17,6 +24,9 @@ export const MessageInput = styled.div`
 export const Container = styled.div`
   height: 100%;
   background: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0px 20px;
 `;
 
 export const Content = styled.div`

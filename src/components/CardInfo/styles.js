@@ -1,32 +1,36 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Image = styled.div`
-  display: inline-block;
-  /* flex: 1; */
-  border: 1px solid #eee;
-  border-radius: 6px;
-  flex: 1;
+  overflow-x: auto;
 
   div {
-    display: flex;
-    flex: 1;
+    display: inline-flex;
+    border: 1px solid #eee;
+    border-radius: 6px;
 
     img {
-      display: flex;
-      padding: 4px;
-
+      max-height: 120px;
       height: 100%;
-      /*max-height: 210px; */
+      padding: 3px;
     }
   }
 `;
 
 export const Info = styled.div`
-  display: inline-block;
-  border-radius: 10px;
-  padding: 8px 10px;
-  margin-top: 3px;
-  background: #fafafa;
+  div {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: #eee;
+
+    span {
+      line-height: 1.5em;
+    }
+  }
 `;

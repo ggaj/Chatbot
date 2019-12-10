@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin: 15px 0px;
+  max-width: 280px;
+  width: 100%;
+`;
 export const InfoReplay = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,6 +21,10 @@ export const InfoReplay = styled.div`
 `;
 export const Replies = styled.div`
   div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     button {
       border: none;
       border-bottom: 1px solid #eee;

@@ -19,7 +19,6 @@ export default createGlobalStyle`
 
   html, body, #root{
     height: 100%;
-    background: #eee
   }
 
   body{

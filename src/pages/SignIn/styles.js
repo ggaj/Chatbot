@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { lighten } from 'polished';
 
 export const Container = styled.div`
+  html,
+  body,
+  #root {
+    height: 100%;
+    background: #eee;
+  }
+
   height: 100%;
   display: flex;
   flex-direction: column;
