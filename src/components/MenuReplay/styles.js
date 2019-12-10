@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 export const Container = styled.div`
   margin: 15px 0px;
@@ -10,7 +11,7 @@ export const InfoReplay = styled.div`
   flex-direction: column;
   border: 1px solid #eee;
   border-bottom: none;
-  background: #fafafa;
+  background: #eee;
   padding: 6px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -34,7 +35,7 @@ export const Replies = styled.div`
       height: 30px;
 
       &:hover {
-        background: #fafafa;
+        background: ${lighten(0.05, '#eee')};
       }
     }
 

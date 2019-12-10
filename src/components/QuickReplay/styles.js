@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 export const Container = styled.div`
   margin: 15px 0px;
@@ -9,7 +10,7 @@ export const MessageTitle = styled.div`
     display: flex;
 
     span {
-      background: #fafafa;
+      background: #eee;
       padding: 8px 8px;
       border-radius: 5px;
       border-top-right-radius: 15px;
@@ -45,7 +46,7 @@ export const Replies = styled.div`
       background: #fff;
 
       &:hover {
-        background: #fafafa;
+        background: ${lighten(0.05, '#eee')};
       }
     }
   }

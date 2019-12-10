@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
 
     span {
-      background: #fafafa;
+      background: #eee;
       padding: 8px 8px;
       border-radius: 5px;
       border-top-right-radius: 15px;

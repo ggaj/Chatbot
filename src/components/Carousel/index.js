@@ -1,7 +1,31 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container, Card, ImageContent, Menu } from './styles';
 
-export default function Carousel() {
-  return <div />;
+export default function Carousel({ cards = [] }) {
+  return (
+    <Container>
+      {cards.map(card => (
+        <Card>
+          <ImageContent>
+            <img
+              className="img-first"
+              src={card.image.source}
+              alt={card.image.alt}
+            />
+          </ImageContent>
+          <Menu>
+            <div className="title">{card.title}</div>
+            <div className="buttons-menu">
+              {card.menus.map(menu => (
+                <button className="button-menu" type="submit">
+                  {menu}
+                </button>
+              ))}
+            </div>
+          </Menu>
+        </Card>
+      ))}
+    </Container>
+  );
 }

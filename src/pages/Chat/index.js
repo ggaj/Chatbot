@@ -4,6 +4,7 @@ import { MdSend } from 'react-icons/md';
 
 import MessageTitle from '../../components/MessageTitle';
 import QuickReplay from '~/components/QuickReplay';
+import Carousel from '~/components/Carousel';
 
 import {
   Container,
@@ -25,6 +26,7 @@ export default function Main() {
         messages={[
           'Aguarde um momento enquanto eu consulto...',
           'Tudo certo, vi aqui que você já pode solicitar suas férias e tem direito a 30 dias, vamos lá',
+          'Então vamos lá marcar suas férias ?',
         ]}
       />
       <MessageResponse message="Olá mundo" />
@@ -56,98 +58,38 @@ export default function Main() {
         ]}
       />
 
-      {/* <Content>
-        <Card>
-          <ImageContent>
-            <img
-              className="img-first"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu"
-              alt="Melhor do Brasil"
-            />
-          </ImageContent>
-          <Menu>
-            <div className="title">Pagamentos</div>
-            <div className="buttons-menu">
-              <button className="button-menu" type="submit">
-                Contracheque
-              </button>
-              <button className="button-menu" type="submit">
-                Descontos
-              </button>
-              <button className="button-menu" type="submit">
-                Crediários
-              </button>
-            </div>
-          </Menu>
-        </Card>
-        <Card>
-          <ImageContent>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu"
-              alt="Melhor do Brasil"
-            />
-          </ImageContent>
-          <Menu>
-            <div className="title">Pagamentos</div>
-            <div className="buttons-menu">
-              <button className="button-menu" type="submit">
-                Contracheque
-              </button>
-              <button className="button-menu" type="submit">
-                Descontos
-              </button>
-              <button className="button-menu" type="submit">
-                Crediários
-              </button>
-            </div>
-          </Menu>
-        </Card>
-        <Card>
-          <ImageContent>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu"
-              alt="Melhor do Brasil"
-            />
-          </ImageContent>
-          <Menu>
-            <div className="title">Pagamentos</div>
-            <div className="buttons-menu">
-              <button className="button-menu" type="submit">
-                Contracheque
-              </button>
-              <button className="button-menu" type="submit">
-                Descontos
-              </button>
-              <button className="button-menu" type="submit">
-                Crediários
-              </button>
-            </div>
-          </Menu>
-        </Card>
-        <Card>
-          <ImageContent>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu"
-              alt="Melhor do Brasil"
-            />
-          </ImageContent>
-          <Menu className="menu-last">
-            <div className="title">Pagamentos</div>
-            <div className="buttons-menu">
-              <button className="button-menu" type="submit">
-                Contracheque
-              </button>
-              <button className="button-menu" type="submit">
-                Descontos
-              </button>
-              <button className="button-menu" type="submit">
-                Crediários
-              </button>
-            </div>
-          </Menu>
-        </Card> */}
-      {/* </Content> */}
-      {/* <FooterMessage>
+      <Carousel
+        cards={[
+          {
+            image: {
+              source:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu',
+              title: 'Grêmio',
+            },
+            title: 'Grêmio vai ganhar qual título em 2020 ?',
+            menus: ['Brasileirão', 'Brasil', 'Copa America'],
+          },
+          {
+            image: {
+              source:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu',
+              title: 'Grêmio',
+            },
+            title: 'Grêmio vai ganhar qual título em 2020 ?',
+            menus: ['Brasileirão', 'Brasil', 'Copa America'],
+          },
+          {
+            image: {
+              source:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgYllltn5LVxLSGsYOyrVvNHjp9kFOmuRnuF6MRj6qHaEksZOu',
+              title: 'Grêmio',
+            },
+            title: 'Grêmio vai ganhar qual título em 2020 ?',
+            menus: ['Brasileirão', 'Brasil', 'Copa America'],
+          },
+        ]}
+      />
+      <FooterMessage>
         <Form>
           <Input name="message" placeholder="Aa" />
 
@@ -155,7 +97,7 @@ export default function Main() {
             <MdSend size="20" color="#333" />
           </Send>
         </Form>
-      </FooterMessage> */}
+      </FooterMessage>
     </Container>
   );
 }

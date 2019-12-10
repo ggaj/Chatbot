@@ -25,7 +25,7 @@ export const Container = styled.div`
   height: 100%;
   background: #fff;
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding: 0px 20px;
 `;
 
@@ -40,7 +40,7 @@ export const Card = styled.div`
 
 export const FooterMessage = styled.div`
   height: 60px;
-  background: #fafafa;
+  background: #eee;
 
   form {
     display: flex;
@@ -69,7 +69,7 @@ export const Send = styled.button`
   transition: background 0.3s;
 
   &:hover {
-    background: ${darken(0.07, '#fafafa')};
+    background: ${darken(0.07, '#eee')};
   }
 `;
 
@@ -84,7 +84,7 @@ export const ImageContent = styled.div`
 `;
 
 export const Menu = styled.div`
-  background: #fafafa;
+  background: #eee;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   width: 200px;
