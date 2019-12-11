@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function MessageTitle({ messages = [] }) {
+export default function MessageTitle({ payload = [] }) {
   return (
     <Container>
-      {messages.map(message => (
-        <div>
+      {payload.map((message, index) => (
+        <div key={String(index)}>
           <span>{message}</span>
         </div>
       ))}
@@ -16,5 +16,6 @@ export default function MessageTitle({ messages = [] }) {
 }
 
 MessageTitle.propTypes = {
-  messages: PropTypes.element.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  payload: PropTypes.array.isRequired,
 };

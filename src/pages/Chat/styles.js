@@ -32,6 +32,7 @@ export const Content = styled.div`
   margin: 0px auto 60px auto;
   padding: 0px 20px;
   overflow-y: auto;
+  width: 100%;
 `;
 
 export const Card = styled.div`

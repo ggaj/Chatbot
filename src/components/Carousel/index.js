@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container, Card, ImageContent, Menu } from './styles';
 
-export default function Carousel({ cards = [] }) {
+export default function Carousel({ payload = [] }) {
   return (
     <Container>
-      {cards.map(card => (
+      {payload.map(card => (
         <Card>
           <ImageContent>
             <img

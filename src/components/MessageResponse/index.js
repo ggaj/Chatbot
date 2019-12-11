@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function MessageResponse({ message }) {
+export default function MessageResponse({ payload }) {
   return (
     <Container>
-      <span>{message}</span>
+      <span>{payload}</span>
     </Container>
   );
 }
 
 MessageResponse.propTypes = {
-  message: PropTypes.element.isRequired,
+  payload: PropTypes.string.isRequired,
 };
