@@ -4,7 +4,6 @@ import { MdSend } from 'react-icons/md';
 
 import { Container, Content, FooterMessage, Send } from './styles';
 import MessageResponse from '~/components/MessageResponse';
-import MessageTitle from '~/components/MessageTitle';
 import Actions from '~/controller/Chat';
 
 export default function Main() {
@@ -28,7 +27,6 @@ export default function Main() {
     async function handleActions() {
       if (data.length > 0) {
         const payloads = await Actions(intent);
-        console.log(payloads);
         payloads.map(payload => setComponents([...components, payload]));
       }
     }

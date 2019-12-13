@@ -4,11 +4,46 @@ import { lighten } from 'polished';
 export const Container = styled.div`
   margin: 15px 0;
   display: flex;
-  overflow-x: auto;
+  flex-direction: column;
 `;
+
+export const MessageTitle = styled.div`
+  margin-top: 15px;
+  div {
+    display: flex;
+
+    span {
+      background: #eee;
+      padding: 8px 8px;
+      border-radius: 5px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      margin-bottom: 4px;
+    }
+
+    &:first-child {
+      span {
+        border-top-left-radius: 15px;
+      }
+    }
+
+    &:last-child {
+      span {
+        border-bottom-left-radius: 15px;
+      }
+    }
+`;
+
 export const Card = styled.div`
-  padding: 0 2px;
+  padding: 0px 2px;
+  display: flex;
+  overflow-x: auto;
+
+  div {
+    margin-left: 2px;
+  }
 `;
+
 export const ImageContent = styled.div`
   img {
     display: block;
@@ -19,6 +54,9 @@ export const ImageContent = styled.div`
   }
 `;
 export const Menu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #eee;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
